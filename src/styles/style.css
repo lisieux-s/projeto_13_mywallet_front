@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   font-family: 'Raleway', sans-serif;
 
   background: #8c11be;
@@ -29,13 +34,32 @@ form {
 form input,
 form button {
   width: 100%;
+
+  border: 0;
+  border-radius: 5px;
+}
+
+form input {
+  height: 58px;
 }
 
 form button {
   height: 46px;
+  font-weight: 700;
 }
 
 button {
   background: #a328d6;
   color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 32px;
+
+  margin: 24px 0;
 }
